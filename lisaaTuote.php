@@ -47,7 +47,7 @@
             echo "<p>Tuote '$nimi' lisätty onnistuneesti!</p>";
         } else {
             echo "<p>Tuotteen lisääminen epäonnistui.</p>";
-        }
+        } 
     }
 
     ?>
