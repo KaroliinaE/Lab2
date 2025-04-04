@@ -1,0 +1,141 @@
+/* tuotteet sivu */
+
+/* sivun ylälaidan tekstit */
+.tuoteryhmat{
+  display: flex;
+  width: 80%; 
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  align-items: flex-start;
+}
+
+/* molemmat tuotetekstipalkit */
+.tuoteteksti {
+  flex: 1;
+  padding: 20px; 
+}
+
+.tuoteteksti:first-child {
+  flex-basis: 20%; /* Adjust the width of the first column as needed */
+}
+
+.tuoteteksti:last-child {
+  flex-basis: 80%; /* Adjust the width of the second column as needed */
+}
+
+/* tämän sisällä sivupalkki ja content*/
+.tuotepage {
+  display: flex;
+  margin-left: 10%;
+  margin-right: 10%;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+/* sivupalkki tuote-sivulla */
+.sidebar {
+  margin-top: 2.5rem;
+  padding: 0;
+  width: 200px;
+  height: 50%;
+  background-color: #D1E8E2;
+  overflow: auto;
+  border-radius: 5%;
+  border-color: #19747E;
+  border-style: solid;
+  border-width: 1px;
+}
+
+/* Sivupalkin linkir*/
+.sidebar a {
+  display: flex;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: #19747E;
+  color: black;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+/* tämä sisältää otsikkopalkit ja tuoterivit (+ content-tuote)*/
+.main-content {
+  padding: 1px 16px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.otsikkopalkki {
+  margin-bottom: 20px;
+  text-align: center;
+  margin-left: 5%;
+}
+
+.tuoterivi {
+  margin-left: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 5%;
+}
+
+.content-tuote a {
+  text-decoration: none;
+  color: black;
+}
+
+.content-tuote {
+  width: 200px;
+  height: auto;
+  margin: 15px;
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  transition: .4s;
+  background-color: #F5F5F5;
+}
+
+/* Hover effect for content-tuote */
+.content-tuote:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+/* Image styles inside content-tuote */
+.content-tuote img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  /* Maijun ehdotus, joka korjaa boksien koko-ongelman. Aikaisempi max-height 200px */
+  max-height: 130px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.tuotenimi{
+text-align: center;
+}
+
+.hinta{
+text-align: center;
+width: 100%;
+background-color: #D1E8E2;
+padding: 15px;
+border: 0;
+outline: none; 
+cursor: pointer;
+border-bottom-right-radius: 20px;
+border-bottom-left-radius: 20px;
+}
