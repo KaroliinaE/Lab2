@@ -139,3 +139,55 @@ cursor: pointer;
 border-bottom-right-radius: 20px;
 border-bottom-left-radius: 20px;
 }
+
+
+/* tuotesivu */
+@media screen and (max-width: 1200px){
+.content-tuote{
+  width: 45%;
+}
+}
+
+
+
+@media screen and (max-width: 768px){
+
+/*tuotesivu*/
+
+.tuoteryhmat{
+  flex-direction: column;
+}
+
+.tuotepage{
+  flex-direction: column;
+}
+
+.sidebar {
+  margin: auto;
+  width: 50%;
+  height: auto;
+  position: relative;
+}
+
+.sidebar a {
+  justify-content: center;
+}
+
+div.tuoterivi {margin-left: 0;}
+
+.content-tuote{
+  width: 50%;
+}
+
+.otsikkopalkki {
+  margin-left: 0;
+}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+.sidebar a {
+  text-align: center;
+  float: none;
+}
+}
