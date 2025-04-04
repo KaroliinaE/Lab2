@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lautapelikaupan ensimmäiset www-sivut">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles-karoliina.css">
+    <link rel="stylesheet" href="styles-maiju.css">
+    <link rel="icon" href="favicon_dice.jpg" type="image/x-icon">
+    <!--Leipäteksti-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lemon&family=Salsa&family=Source+Sans+3:wght@300&display=swap" rel="stylesheet">
+    <!--Hampurilaisvalikkoa-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Ota yhteyttä - Lautapelimania</title>
+</head>
+<body>
+    <header>
+        <div class="space"></div>
+        <a href="index.html"><img src="logofinal.png" alt="logo" class="logo"></a>
+        <div class="topnav" id="myTopnav">
+            <a href="index.html">Etusivu</a>
+            <a href="tuotteet.html">Tuotteet</a>
+            <a href="yrityksesta.html">Yrityksestä</a>
+            <a href="otayhteytta.html" class="active">Ota Yhteyttä</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </header>
+
+
+    <main>
+            <div class="contact-container">
+                <form action="#" method="post">
+                    <h1>Ota yhteyttä</h1>
+                    <label for="name">Nimi:</label>
+                    <input type="text" id="name" name="name">
+
+                    <label for="email">Sähköpostiosoite:</label>
+                    <input type="email" id="email" name="email">
+
+                    <p>Viestini aihe:</p>
+                    <input type="radio" id="feedback" name="subject" value="palaute">
+                    <label for="feedback">palaute</label><br>
+                    <input type="radio" id="wish" name="subject" value="tuotetoive">
+                    <label for="wish">tuotetoive</label><br>
+                    <input type="radio" id="other" name="subject" value="muu">
+                    <label for="other">muu</label>
+                    // lisäys koodiin
+
+                    <p>Viesti:</p>
+                    <textarea name="message" id="message" cols="71" rows="10" placeholder="kirjoita viestisi tähän"></textarea><br>
+
+                    <input type="checkbox" id="answer" name="answer" value="answer">
+                    <label for="answer">Toivon, että asiakaspalvelu on minuun yhteydessä</label><br>
+
+                    <input type="submit" value="Lähetä">
+
+                </form>
+            </div>
+    </main>
+
+
+
+
+
+    <footer>
+        <div class="footer-content">
+    
+            <div class="footer-text">
+                <p>Vivamus efficitur vehicula ante, non dapibus velit.</p>
+            </div>
+                    
+            <div class="footer-social-links">
+                <p>Seuraa meitä:</p>
+                <a href="#"><img src="Footer_ikonit/icon_fb5.png" alt="facebook"></a>
+                <a href="#"><img src="Footer_ikonit/icon_ig5.png" alt="instagram"></a>                    
+                <a href="#"><img src="Footer_ikonit/icon_yt5.png" alt="youtube"></a>
+            </div>
+        </div>
+    
+        <div class="space-down">
+            <p>Copyright Team 7 2024</p>
+        </div>
+     </footer> 
+
+     <script>
+        function myFunction() {
+           var x = document.getElementById("myTopnav");
+           if (x.className === "topnav") {
+             x.className += " responsive";
+           } else {
+             x.className = "topnav";
+           }
+         }
+    </script>     
+
+</body>
+</html>
