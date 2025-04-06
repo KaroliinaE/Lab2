@@ -1,0 +1,2 @@
+Tuotedata haetaan simuloidusti JSON-tiedostosta tai lomakkeella syöttäen.
+Tulevaisuudessa voitaisiin yhdistää ulkoinen REST-API.
