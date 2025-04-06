@@ -191,3 +191,30 @@ div.tuoterivi {margin-left: 0;}
   float: none;
 }
 }
+
+footer {
+  text-align: center;
+  padding: 30px;
+  background-color: #f0f0f8;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  color: #444;
+  border-top: 3px dashed #ccc;
+}
+
+footer button {
+  background-color: #ffcc00;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer button:hover {
+  background-color: #ff9900;
+  transform: scale(1.05) rotate(-2deg);
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
